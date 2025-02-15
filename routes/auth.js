@@ -7,7 +7,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const JWT_SECRET= 'JaiIsAGoodBoy';
 
-//Route 1 create user and return authteken
+//Route 1 create user and return authteken /api/auth/createuser
 router.post('/createuser', [ 
   body('name', 'Enter a valid Name').isLength({ min : 3}),
   body('email', 'Enter a valid email').isEmail(),
@@ -65,7 +65,7 @@ router.post('/createuser', [
 //   res.send('Hello signup!')
 // })
 
-//Route 2 Login user via authtoken and return id
+//Route 2 Login user via authtoken and return id /api/auth/login
 router.post('/login', [ 
   body('email', 'Enter a valid email').isEmail(),
   body('password', 'please enter correct credentials').exists()
@@ -105,7 +105,7 @@ router.post('/login', [
   
   })
 
-  //Route 3 Getlogged in user detail 
+  //Route 3 Getlogged in user detail /api/auth/getuser
   router.post('/getuser',fetchuser, async (req, res) => {
   
   
