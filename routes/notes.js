@@ -22,6 +22,7 @@ router.post('/addnotes',fetchuser,  [
     }
   try
   {
+    console.log("call api add not backend");
   const {title,description,tag } = req.body;
   
   const note = new Note({
