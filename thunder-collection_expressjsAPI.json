@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "expressjsAPI",
     "collectionId": "a0704c6a-b56f-434e-a07f-e5b452b95fae",
-    "dateExported": "2025-03-04T03:09:49.086Z",
+    "dateExported": "2025-03-04T03:26:17.267Z",
     "version": "1.2",
     "folders": [
         {
@@ -90,7 +90,33 @@
                     "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjdjNjZiNDQzNmJlNzYxZDU1NzhkODVlIn0sImlhdCI6MTc0MTA1NzAzMH0.sMxZzAqDzyKRu2geE32hrpVIR90XBGmdcw7RDS4O4SU"
                 }
             ]
+        },
+        {
+            "_id": "53664cd7-35bc-481a-98e9-21f67a129f8f",
+            "colId": "a0704c6a-b56f-434e-a07f-e5b452b95fae",
+            "containerId": "95b557bb-4572-4c64-93b0-28a2121871b6",
+            "name": "/api/notes/addnotes",
+            "url": "http://localhost:5000/api/notes/addnotes",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-03-04T03:21:26.058Z",
+            "modified": "2025-03-04T03:25:29.019Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjdjNjZiNDQzNmJlNzYxZDU1NzhkODVlIn0sImlhdCI6MTc0MTA1NzAzMH0.sMxZzAqDzyKRu2geE32hrpVIR90XBGmdcw7RDS4O4SU"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\" :\"Inotebook-backend\",\n  \"description\" : \"this ia dev app desc\",\n  \"tag\" : \"dev\"\n}",
+                "form": []
+            }
         }
     ],
-    "ref": "rWMTlcm-oRh3lKBNARn6xvraYnhJ3EP2qI-RGBMm09YRScANxYAPBDitTmGRDopUKwlLvqB_aCk2blzE1jrztQ"
+    "ref": "rWMTlcm-oRh3lKBNARn6xt3gzEBa1tTQH-1TwAX4sPeLBLGEXTYjWtSsxWAjE6laaxDkJkn6T5oNuXIT3PoiGw"
 }
