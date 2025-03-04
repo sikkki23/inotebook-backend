@@ -110,7 +110,7 @@ router.post('/login', [
   
   
   try{
-    userId =req.user.id;
+    let userId =req.user.id;
     let user = await User.findById((userId)).select("-password");
     res.json(user);
   }catch(error)

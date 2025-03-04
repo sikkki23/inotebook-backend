@@ -1,0 +1,96 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "expressjsAPI",
+    "collectionId": "a0704c6a-b56f-434e-a07f-e5b452b95fae",
+    "dateExported": "2025-03-04T03:09:49.086Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "788a5c96-b293-40e8-bf3c-e7d82eaf48f0",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2025-03-04T02:49:55.373Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "95b557bb-4572-4c64-93b0-28a2121871b6",
+            "name": "Notes_CURD",
+            "containerId": "",
+            "created": "2025-03-04T02:50:17.886Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "dda018bf-9d17-4e70-8f52-b9f32279c709",
+            "colId": "a0704c6a-b56f-434e-a07f-e5b452b95fae",
+            "containerId": "788a5c96-b293-40e8-bf3c-e7d82eaf48f0",
+            "name": "/api/auth/createuser",
+            "url": "http://localhost:5000/api/auth/createuser",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-03-04T02:50:39.215Z",
+            "modified": "2025-03-04T02:53:56.535Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"sicky\",\n  \"email\" : \"sicky@gmail.com\",\n  \"password\" : \"123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ad968460-7c16-4fb1-8fa8-0d90fd39b217",
+            "colId": "a0704c6a-b56f-434e-a07f-e5b452b95fae",
+            "containerId": "788a5c96-b293-40e8-bf3c-e7d82eaf48f0",
+            "name": "/api/auth/login",
+            "url": "http://localhost:5000/api/auth/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-03-04T02:54:31.876Z",
+            "modified": "2025-03-04T02:57:10.398Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\" : \"sicky@gmail.com\",\n  \"password\" : \"123456\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "fc626ee4-dfdd-4d35-b10c-f5465ad08ba7",
+            "colId": "a0704c6a-b56f-434e-a07f-e5b452b95fae",
+            "containerId": "788a5c96-b293-40e8-bf3c-e7d82eaf48f0",
+            "name": "/api/auth/getuser",
+            "url": "http://localhost:5000/api/auth/getuser",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2025-03-04T02:58:48.874Z",
+            "modified": "2025-03-04T03:04:20.395Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjdjNjZiNDQzNmJlNzYxZDU1NzhkODVlIn0sImlhdCI6MTc0MTA1NzAzMH0.sMxZzAqDzyKRu2geE32hrpVIR90XBGmdcw7RDS4O4SU"
+                }
+            ]
+        }
+    ],
+    "ref": "rWMTlcm-oRh3lKBNARn6xvraYnhJ3EP2qI-RGBMm09YRScANxYAPBDitTmGRDopUKwlLvqB_aCk2blzE1jrztQ"
+}
